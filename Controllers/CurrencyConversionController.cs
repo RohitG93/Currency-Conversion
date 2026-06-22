@@ -17,7 +17,7 @@ namespace Currency_Conversion.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            return Ok("Conversion api running successfully version 1.5");
+            return Ok("Conversion api running successfully version 1.6");
         }
 
         [HttpGet("GetConversionDetail/{fromCurrency}/{toCurrency}/{amount}")]

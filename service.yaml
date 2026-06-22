@@ -1,0 +1,17 @@
+﻿apiVersion: v1
+kind: Service
+
+metadata:
+  name: dotnet-service-currency-conversion
+
+spec:
+
+  selector:
+    app: dotnet-currency-conversion
+
+  ports:
+  - port: 80
+    targetPort: 8080
+    nodePort: 31635
+
+  type: NodePort
